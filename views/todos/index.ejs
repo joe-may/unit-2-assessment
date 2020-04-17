@@ -9,9 +9,13 @@
 </head>
 <body>
   <h1>Todos List </h1>
- 
+  <% if (todos.length === 0) { %>
+    <h3>there is no to dos</h3>
+    <% } %>
+
   <ul>
     <% todos.forEach(function(t, idx) { %>
+     
       <li>
         <%= t.todo %> 
           - 
